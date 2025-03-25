@@ -30,33 +30,40 @@ becomes C. To change a message back, each letter is replaced by the one three be
 
 ## PROGRAM :-
 ~~~
-#A python program to illustrate Caesar Cipher Technique
-def encrypt(text,s):
+# A Python program to illustrate Caesar Cipher Technique
+
+def encrypt(text, s):
     result = ""
 
-    # traverse text
+    # Traverse the text
     for i in range(len(text)):
         char = text[i]
 
         # Encrypt uppercase characters
-        if (char.isupper()):
-            result += chr((ord(char) + s-65) % 26 + 65)
+        if char.isupper():
+            result += chr((ord(char) + s - 65) % 26 + 65)
 
         # Encrypt lowercase characters
-        else:
+        elif char.islower():
             result += chr((ord(char) + s - 97) % 26 + 97)
+        
+        # Keep non-alphabetic characters unchanged
+        else:
+            result += char
 
     return result
 
-#check the above function
-text = "ATTACKATO
-s = 4
-print ("Text  : " + text)
-print ("Shift : " + str(s))
-print ("Cipher: " + encrypt(text,s))
+text = input("Enter the text: ")
+s = int(input("Enter the shift value: "))
+
+print("Text  : " + text)
+print("Shift : " + str(s))
+print("Cipher: " + encrypt(text, s))
+
 ~~~
 ## OUTPUT :-
 
-![image](https://github.com/user-attachments/assets/e40ef6db-e2bb-437e-aa4b-fbcc9aa9406e)
+![image](https://github.com/user-attachments/assets/022c96d5-00d7-4811-9bb2-1b0656e0e04a)
+
 ## Result:
 Thus To implement the simple substitution technique using Caesar cipher has been executed successfully.
