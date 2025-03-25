@@ -1,9 +1,10 @@
 ## EX. NO: 1(A) : IMPLEMENTATION OF CAESAR CIPHER
- 
+### Name:Ashwath M
+### Register Number:212223230023
 
 ## AIM:
 
-To implement the simple substitution technique named Caesar cipher using C language.
+To implement the simple substitution technique named Caesar cipher using Python.
 
 ## DESCRIPTION:
 
@@ -28,7 +29,36 @@ becomes C. To change a message back, each letter is replaced by the one three be
 
 
 PROGRAM :-
+~~~
+#A python program to illustrate Caesar Cipher Technique
+def encrypt(text,s):
+    result = ""
+
+    # traverse text
+    for i in range(len(text)):
+        char = text[i]
+
+        # Encrypt uppercase characters
+        if (char.isupper()):
+            result += chr((ord(char) + s-65) % 26 + 65)
+
+        # Encrypt lowercase characters
+        else:
+            result += chr((ord(char) + s - 97) % 26 + 97)
+
+    return result
+
+#check the above function
+text = "ATTACKATO
+s = 4
+print ("Text  : " + text)
+print ("Shift : " + str(s))
+print ("Cipher: " + encrypt(text,s))
+~~~
 
 
 
 OUTPUT :-
+
+![image](https://github.com/user-attachments/assets/e40ef6db-e2bb-437e-aa4b-fbcc9aa9406e)
+
