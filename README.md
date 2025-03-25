@@ -28,7 +28,7 @@ becomes C. To change a message back, each letter is replaced by the one three be
 ### STEP-5: Display the cipher text obtained above.
 
 
-PROGRAM :-
+## PROGRAM :-
 ~~~
 #A python program to illustrate Caesar Cipher Technique
 def encrypt(text,s):
@@ -55,11 +55,8 @@ print ("Text  : " + text)
 print ("Shift : " + str(s))
 print ("Cipher: " + encrypt(text,s))
 ~~~
-## Result:
-Thus To implement the simple substitution technique using Caesar cipher has been executed successfully.
-
-
-OUTPUT :-
+## OUTPUT :-
 
 ![image](https://github.com/user-attachments/assets/e40ef6db-e2bb-437e-aa4b-fbcc9aa9406e)
-
+## Result:
+Thus To implement the simple substitution technique using Caesar cipher has been executed successfully.
