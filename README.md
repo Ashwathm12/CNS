@@ -55,7 +55,8 @@ print ("Text  : " + text)
 print ("Shift : " + str(s))
 print ("Cipher: " + encrypt(text,s))
 ~~~
-
+## Result:
+Thus To implement the simple substitution technique using Caesar cipher has been executed successfully.
 
 
 OUTPUT :-
